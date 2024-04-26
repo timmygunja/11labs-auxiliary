@@ -1,0 +1,89 @@
+.actor-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "head"
+    "labels"
+    "usecase"
+    "audio";
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.5rem;
+
+  max-width: 80vw;
+}
+
+.actor-head {
+  grid-area: head;
+  display: flex;
+  /* text-align: left; */
+}
+
+.glass-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(171, 176, 247, 0.37);
+  margin: 0 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face {
+  /* grid-area: name; */
+  /* width: 30px; */
+  /* text-align: left; */
+}
+
+.actor-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 1rem;
+
+  font-size: 2rem;
+}
+
+.actor-labels {
+  grid-area: labels;
+  display: flex;
+}
+
+.actor-labels p {
+  /* margin: 0.25rem 1rem; */
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px; /* rounded-full equivalent */
+  padding-top: 0.125rem; /* py-0.5 equivalent */
+  padding-bottom: 0.125rem; /* py-0.5 equivalent */
+  font-size: clamp(0.875rem, 0.5rem, 0.25rem); /* text-sm equivalent */
+  font-weight: 500; /* font-medium equivalent */
+  white-space: nowrap; /* whitespace-nowrap equivalent */
+  padding-left: 0.5rem; /* px-2 equivalent */
+  padding-right: 0.5rem; /* px-2 equivalent */
+
+  margin-right: 0.45rem;
+  /* background-color: #c1e3f571;  */
+  backdrop-filter: blur(10px);
+}
+
+.actor-usecase {
+  grid-area: usecase;
+  color: rgba(255, 255, 255, 0.852);
+}
+
+.audio {
+  grid-area: audio;
+}
