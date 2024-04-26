@@ -24,15 +24,17 @@
   grid-area: head;
   display: flex;
   /* text-align: left; */
+  margin-bottom: 0.25rem;
 }
 
 .glass-circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.405);
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px 0 rgba(171, 176, 247, 0.37);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.37);
   margin: 0 0.25rem;
 
   display: flex;
@@ -75,13 +77,13 @@
   padding-right: 0.5rem; /* px-2 equivalent */
 
   margin-right: 0.45rem;
-  /* background-color: #c1e3f571;  */
-  backdrop-filter: blur(10px);
+  background-color: #ffffff63;
 }
 
 .actor-usecase {
   grid-area: usecase;
   color: rgba(255, 255, 255, 0.852);
+  margin-top: 0.25rem;
 }
 
 .audio {
