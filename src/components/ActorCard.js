@@ -23,7 +23,7 @@ const ActorCard = ({ actor }) => {
         <p className="actor-age">{actor.labels.age}</p>
       </div>
 
-      <p className="actor-usecase">Use Case: {actor.labels["use case"]}</p>
+      <p className="actor-usecase">Use Case: {actor.labels["use_case"]}</p>
 
       <div className="audio">
         <TelegramAudioPlayer audioUrl={actor.preview_url} />
